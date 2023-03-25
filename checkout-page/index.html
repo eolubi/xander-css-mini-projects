@@ -5,46 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="C:\Users\EmmanuelOlubi\Documents\xander-css-mini-project\xander-css-mini-projects\checkout-page\assets\images\style.css">
+    <link rel="stylesheet" href="C:\Users\EmmanuelOlubi\Documents\xander-css-mini-project\xander-css-mini-projects\checkout-page\assets\images\coffee_masters_logo.png">
     <title>Checkout Page</title>
 </head>
 
 <body>
-    Coffee Masters
 
-    ITEMS
+    
 
-    1x
-    Cappuccino
-    $6.00
-    Light Foam
+    <!--The nav-bar Section-->
+    <section id="nav-bar">
+    <nav><img class="nav-icon" src="C:\Users\EmmanuelOlubi\Documents\xander-css-mini-project\xander-css-mini-projects\checkout-page\assets\images\coffee_masters_logo.png">
+                Coffee Masters     
+    </nav>
+    </section>
 
-    1xCappuccino
-    $7. 90
-    Almond Milk
-    Double Espresso Shot
+   
 
-    1x
-    Croissant
-    $5.37
-    Butter
+    <!--The item section-->
+    <div class="wrapper">
+    <section id="Items">
 
-    NAME
+        <h3>ITEMS</h3>
+   
+       <table>
+        <tr>
+            <td>1x</td><td>Cappuccino</td><td>$6.00</td>
+        </tr>
+        <tr>
+            <td></td><td>Light Foam</td>
+        </tr>
+        <tr>
+            <td>1x</td><td>Cappuccino</td><td>$7. 90</td>
+        </tr>
+        <tr>
+            <td></td><td>Almond Milk</td>
+        </tr>
+        <tr>
+            <td></td><td>Double Espresso Shot</td>
+        </tr>
+        <tr>
+            <td>1x</td><td>Croissant</td><td>$5.37</td>
+        </tr>
+        <tr>
+            <td></td><td>Butter</td>
+        </tr>
+
+       </table>
+             
+            
+           
+               
+   
+    
+
+   </section>
+
+    <!--the Name Section-->
+   
+<section id="Name">
+    <h3>NAME</h3>
     Name for order
 
-    PAYMENT
+</section>
+
+    <!--Payment Section-->
+  
+<section id="Payment">
+    <h3>PAYMENT</h3>
     Card Number
     CCV Number
+</section>
+    </div>
 
-    Subtotal
-    $19.27
-
-    Tax
-    $0.96
-
-    Total
+    <!--Receipt section-->
+<section id="Receipt">
+    Subtotal<br>
+    $19.27<br>
+    <br>
+    Tax<br>
+    $0.96<br>
+    <br>
+    Total<br>
     $20.23
+</section>
+    <!--place Order button-->
 
-    Place Order
+<section id="Order">
+
+    <input class="order-button" type="button" onclick="alert('Payment succesful. thanks for shopping at Coffee Masters!')" value="Place Order!">
+</section>
 </body>
 
 </html>
