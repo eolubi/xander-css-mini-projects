@@ -20,10 +20,9 @@ body{
     padding: 0;
     margin: 0;
     font-size: var(--font-size);
-    display: grid;
-
-
 }
+
+/*Grid box*/
 
 .wrapper{
     display:grid;
@@ -53,64 +52,130 @@ nav{
 }
 
 
-/*Item section*/
+/*Purchases section*/
 
-#Items{
+.Purchases{
      
     background-color: var(--beige);
     grid-column: 1/2;
     grid-row: 1/3;
-    margin-top: 6rem;
-    margin-left: 3rem;
+    margin: 30px;
     padding: 2rem;
-    box-shadow: 0 8px 8px -4px
+    box-shadow: 0 8px 8px -4px;
+    border-radius: 10px;
+    color: var(--caramel);
+    flex-direction: column;
 }
 
-table td {
-     width: 20em; }
-table td:nth-child(3) { 
-    text-align: end; }
+/*Design for Flex container */
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(238, 209, 170);
+}
+
+.flex-box ul {
+    list-style: none;
+}
+
+.flex-box:last-child {
+    border-bottom: none
+}
+
+.flex-box ul li:first-child {
+    font-weight: 700;
+    color: black;
+}
+
+.flex-box p:last-child {
+    font-weight: 700;
+    color: black;
+}
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
 /*Name Section*/
 
-#Name{
+.Name{
     background-color: var(--beige);
+    color: var(--caramel);
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 6rem;
-    margin-right: 3rem;
-    padding: 2rem;
-    box-shadow: 0 8px 8px -4px
-    
+    margin: 30px;
+    padding: 10px;
+    box-shadow: 0 8px 8px -4px;
+    border-radius: 10px;
 }
+
+.name-group {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .example-input {
+    padding: 8px;
+    border-radius: 50px;
+    border: 1px solid var(--caramel);
+    background-color: var(--beige);
+    width: 95%;
+  }
+
+  .input-label {
+   background-color: var(--beige);
+    color: var(--caramel);
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+  }
+
+  ::placeholder {
+    color: black;
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
 
 /*Payment Section*/
 
-#Payment{
+.Payment{
     background-color: var(--beige);
     grid-column: 2/3;
     grid-row: 2/3;
-    margin-right: 3rem;
+    margin: 30px;
     padding: 2rem;
-    box-shadow: 0 8px 8px -4px
+    box-shadow: 0 8px 8px -4px;
+    border-radius: 10px;
+    color: var(--caramel);
 }
 
 /*Receipt Section*/
 
-#Receipt{
+.Receipt{
     text-align: center;
-    margin: 3rem;
+    margin: 30px;
+    grid-column: 1/3;
+    grid-row: 3/4;
 }
 
 /*Order-button Section*/
 
-#Order{
+.Order{
     margin: 0 auto 0 auto;
+    
 }
 
 .order-button{
     text-align: center;
-    width: 90rem;
+    width: 80%;
     height: 2rem;
-    background-color: var(--cream);
+    background-color: var(--nude);
     border-radius: 10px;
 }

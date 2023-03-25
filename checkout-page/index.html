@@ -16,7 +16,7 @@
     
 
     <!--The nav-bar Section-->
-    <section id="nav-bar">
+    <section class="nav-bar">
     <nav><img class="nav-icon" src="C:\Users\EmmanuelOlubi\Documents\xander-css-mini-project\xander-css-mini-projects\checkout-page\assets\images\coffee_masters_logo.png">
                 Coffee Masters     
     </nav>
@@ -24,64 +24,72 @@
 
    
 
-    <!--The item section-->
+    <!--The Purchases section-->
     <div class="wrapper">
-    <section id="Items">
+        
+            <section class="Purchases">
 
-        <h3>ITEMS</h3>
+        <p>ITEMS</p>
    
-       <table>
-        <tr>
-            <td>1x</td><td>Cappuccino</td><td>$6.00</td>
-        </tr>
-        <tr>
-            <td></td><td>Light Foam</td>
-        </tr>
-        <tr>
-            <td>1x</td><td>Cappuccino</td><td>$7. 90</td>
-        </tr>
-        <tr>
-            <td></td><td>Almond Milk</td>
-        </tr>
-        <tr>
-            <td></td><td>Double Espresso Shot</td>
-        </tr>
-        <tr>
-            <td>1x</td><td>Croissant</td><td>$5.37</td>
-        </tr>
-        <tr>
-            <td></td><td>Butter</td>
-        </tr>
+        <div class="flex-box">
+            <div class="item">
+                <p>1x</p>
+                <ul>
+                    <li>Cappuccino</li>
+                    <li class="beige_color">Light Foam</li>
+                </ul>
+            </div>
+            <p>$6.00</p>
+        </div>
+        
+        <div class="flex-box">
+            <div class="item">
+                <p>1x</p>
+                <ul>
+                    <li>Cappuccino</li>
+                    <li class="beige_color">Almond Milk</li>
+                    <li class="beige_color">Double Espresso Shot</li>
+                </ul>
+            </div>
+            <p>$7. 90</p>
+        </div>
 
-       </table>
-             
-            
-           
-               
-   
-    
+        <div class="flex-box">
+            <div class="item">
+                <p>1x</p>
+                <ul>
+                    <li>Croissant</li>
+                    <li class="beige_color">Butter</li>
+                </ul>
+            </div>
+            <p>$5.37</p>
+        </div>
+          
 
    </section>
+    
 
     <!--the Name Section-->
    
-<section id="Name">
-    <h3>NAME</h3>
-    Name for order
+<section class="Name">
+    <p>NAME</p>
+    <div class="name-group">
+        <label for="example" class="input-label">Name for order</label>
+        <input id="example" class="example-input" placeholder="Ford prefect" />
+    </div>
 
 </section>
 
     <!--Payment Section-->
   
-<section id="Payment">
-    <h3>PAYMENT</h3>
-    Card Number
-    CCV Number
+<section class="Payment">
+    <p>PAYMENT</p>
+    
 </section>
-    </div>
+    
 
     <!--Receipt section-->
-<section id="Receipt">
+<section class="Receipt">
     Subtotal<br>
     $19.27<br>
     <br>
@@ -90,12 +98,13 @@
     <br>
     Total<br>
     $20.23
-</section>
+
     <!--place Order button-->
 
-<section id="Order">
+<div class="Order">
 
     <input class="order-button" type="button" onclick="alert('Payment succesful. thanks for shopping at Coffee Masters!')" value="Place Order!">
+</div>
 </section>
 </body>
 
