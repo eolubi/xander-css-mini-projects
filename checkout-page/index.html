@@ -1,125 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="C:\Users\EmmanuelOlubi\Documents\xander-css-mini-project\xander-css-mini-projects\checkout-page\assets\images\style.css">
-    <link rel="stylesheet" href="C:\Users\EmmanuelOlubi\Documents\xander-css-mini-project\xander-css-mini-projects\checkout-page\assets\images\coffee_masters_logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="C:\Users\EmmanuelOlubi\Documents\xander-css-mini-project\xander-css-mini-projects\checkout-page\assets\images\style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="C:\Users\EmmanuelOlubi\Documents\xander-css-mini-project\xander-css-mini-projects\checkout-page\assets\images\coffee_masters_logo.png"
+    />
     <title>Checkout Page</title>
-</head>
+  </head>
 
-<body>
-
-    
-
+  <body>
     <!--The nav-bar Section-->
     <section class="nav-bar">
-    <nav><img class="nav-icon" src="C:\Users\EmmanuelOlubi\Documents\xander-css-mini-project\xander-css-mini-projects\checkout-page\assets\images\coffee_masters_logo.png">
-                Coffee Masters     
-    </nav>
+      <nav>
+        <img
+          class="nav-icon"
+          src="C:\Users\EmmanuelOlubi\Documents\xander-css-mini-project\xander-css-mini-projects\checkout-page\assets\images\coffee_masters_logo.png"
+        />
+        Coffee Masters
+      </nav>
     </section>
-
-   
 
     <!--The Purchases section-->
     <div class="wrapper">
-        
-            <section class="Purchases">
-
+      <section class="Purchases">
         <p>ITEMS</p>
-   
+
         <div class="flex-box">
-            <div class="item">
-                <p>1x</p>
-                <ul>
-                    <li>Cappuccino</li>
-                    <li class="beige_color">Light Foam</li>
-                </ul>
-            </div>
-            <p>$6.00</p>
-        </div>
-        
-        <div class="flex-box">
-            <div class="item">
-                <p>1x</p>
-                <ul>
-                    <li>Cappuccino</li>
-                    <li class="beige_color">Almond Milk</li>
-                    <li class="beige_color">Double Espresso Shot</li>
-                </ul>
-            </div>
-            <p>$7. 90</p>
+          <div class="item">
+            <p>1x</p>
+            <ul>
+              <li>Cappuccino</li>
+              <li class="beige_color">Light Foam</li>
+            </ul>
+          </div>
+          <p>$6.00</p>
         </div>
 
         <div class="flex-box">
-            <div class="item">
-                <p>1x</p>
-                <ul>
-                    <li>Croissant</li>
-                    <li class="beige_color">Butter</li>
-                </ul>
-            </div>
-            <p>$5.37</p>
+          <div class="item">
+            <p>1x</p>
+            <ul>
+              <li>Cappuccino</li>
+              <li class="beige_color">Almond Milk</li>
+              <li class="beige_color">Double Espresso Shot</li>
+            </ul>
+          </div>
+          <p>$7. 90</p>
         </div>
-          
 
-   </section>
-    
+        <div class="flex-box">
+          <div class="item">
+            <p>1x</p>
+            <ul>
+              <li>Croissant</li>
+              <li class="beige_color">Butter</li>
+            </ul>
+          </div>
+          <p>$5.37</p>
+        </div>
+      </section>
 
-    <!--the Name Section-->
-   
-<section class="Name">
-    <p>NAME</p>
-    <div class="name-group">
-        <label for="example" class="input-label">Name for order</label>
-        <input id="example" class="example-input" placeholder="Ford prefect" />
+      <!--the Name Section-->
+
+      <section class="Name">
+        <p>NAME</p>
+        <div class="name-group">
+          <label for="example" class="input-label">Name for order</label>
+          <input
+            id="example"
+            class="example-input"
+            placeholder="Ford prefect"
+          />
+        </div>
+      </section>
+
+      <!--Payment Section-->
+
+      <section class="Payment">
+        <p>PAYMENT</p>
+        <div class="Card-number">
+          <label for="example" class="input-label">Card number</label>
+          <input
+            id="example"
+            class="example-input"
+            placeholder="1234 5678 9012 3456"
+          />
+        </div>
+
+        <div class="CCV-number">
+          <label for="example" class="input-label">CCV number</label>
+          <input id="example" class="example-input" placeholder="001" />
+        </div>
+      </section>
     </div>
-
-</section>
-
-    <!--Payment Section-->
-  
-<section class="Payment">
-    <p>PAYMENT</p>
-    <div class="Card-number">
-        <label for="example" class="input-label">Card number</label>
-        <input id="example" class="example-input" placeholder="1234 5678 9012 3456" />
-    </div>
-   
-    <div class="CCV-number">
-        <label for="example" class="input-label">CCV number</label>
-        <input id="example" class="example-input" placeholder="001" />
-    </div>
-    
-</section>
-    </div>    
 
     <!--Receipt section-->
-<section class="Receipt">
-
-    <Table>
+    <section class="Receipt">
+      <table>
         <tr>
-            <td>Subtotal</td><td>$19.27</td>
-        </tr> 
+          <td>Subtotal</td>
+          <td>$19.27</td>
+        </tr>
         <tr>
-            <td>Tax</td><td>$0.96</td>
-        </tr>  
+          <td>Tax</td>
+          <td>$0.96</td>
+        </tr>
         <tr>
-            <td><b>Total</b></td><td><b>$20.23</b></td>
-        </tr>  
-    </Table>
-    
+          <td><b>Total</b></td>
+          <td><b>$20.23</b></td>
+        </tr>
+      </table>
 
-    <!--place Order button-->
+      <!--place Order button-->
 
-<div class="Order">
-
-    <input class="order-button" type="button" onclick="alert('Payment succesful. thanks for shopping at Coffee Masters!')" value="Place Order!">
-</div>
-</section>
-</body>
-
+      <div class="Order">
+        <input
+          class="order-button"
+          type="button"
+          onclick="alert('Payment succesful. thanks for shopping at Coffee Masters!')"
+          value="Place Order!"
+        />
+      </div>
+    </section>
+  </body>
 </html>
